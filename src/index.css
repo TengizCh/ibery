@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+body {
+  min-height: 100vh;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --font-lato: "Lato", sans-serif;
+  --font-rounded: "M PLUS Rounded 1c", sans-serif;
+
+  --blue-color: #4a469a;
+  --green-color: #45b749;
+}
+
+h1 {
+  font-family: var(--font-lato);
+}
+
+p {
+  font-family: var(--font-lato);
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ::selection {
+  background-color: rgb(62, 62, 204);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(62, 62, 204);
+  border-radius: 10px;
+} */
+
+.loader_container {
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.loader_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+.loader_title {
+  color: white;
+  font-size: 82px;
+  letter-spacing: 3px;
+  font-family: var(--font-rounded);
+  font-weight: 800;
+}
+
+.spin_text {
+  color: rgba(146, 146, 146, 0.613);
+  font-size: 30px;
+  font-weight: 400;
+  /* color: transparent; */
+  letter-spacing: 2px;
+  font-family: var(--font-lato);
+}
+
+@keyframes loading {
+  from {
+    max-width: 0;
+  }
+}
+
+.spin_text:before {
+  content: attr(data-content);
+  position: absolute;
+  overflow: hidden;
+  max-width: 100%;
+  /* color: #8b31ff;  */
+  color: white;
+  text-decoration: underline;
+
+  animation: loading 2.8s linear;
+}

@@ -1,0 +1,171 @@
+.project_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  //   background-image: url("https://images.everydayhealth.com/images/blueberries-101-1440x810.jpg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   filter: brightness(80%);
+  position: relative;
+  background-attachment: fixed;
+}
+
+.project_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(80%);
+  position: fixed;
+}
+
+.project_title {
+  position: absolute;
+  color: white;
+  top: 10%;
+  right: 10%;
+  font-size: 68px;
+  font-family: var(--font-rounded);
+  z-index: 100 !important;
+}
+
+.project_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  position: absolute;
+  top: 25%;
+}
+
+.grid_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 30px 20px 30px;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 8px 18px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 8px 8px 18px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 8px 8px 18px -3px rgba(0, 0, 0, 0.48);
+}
+
+.grid_title {
+  font-size: 22px !important;
+  font-family: var(--font-rounded);
+  padding-bottom: 10px;
+  color: var(--blue-color);
+}
+
+.grid_text {
+  font-size: 14px;
+  font-family: var(--font-lato);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 769px) {
+  .project_title {
+    position: absolute;
+    color: white;
+    top: 11%;
+    left: 10%;
+    font-size: 68px;
+  }
+
+  .project_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+    position: absolute;
+    top: 30%;
+    padding-bottom: 50px;
+  }
+
+  .grid_1 {
+    height: 260px;
+    width: 86%;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .project_title {
+    position: absolute;
+    color: white;
+    top: 11%;
+    left: 10%;
+    font-size: 68px;
+  }
+
+  .project_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+    position: absolute;
+    top: 25%;
+    padding-bottom: 50px;
+  }
+
+  .grid_1 {
+    height: 280px;
+    width: 90%;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .project_title {
+    position: absolute;
+    color: white;
+    top: 12%;
+    left: 10%;
+    font-size: 64px;
+  }
+
+  .project_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+    top: 25%;
+  }
+
+  .grid_1 {
+    height: 200px;
+    width: 70%;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project_title {
+    position: absolute;
+    color: white;
+    top: 12%;
+    left: 10%;
+    font-size: 58px;
+    font-family: var(--font-rounded);
+  }
+
+  .project_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    position: absolute;
+    top: 25%;
+  }
+}

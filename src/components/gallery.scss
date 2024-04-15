@@ -1,0 +1,103 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.gallery_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.div_margin {
+  margin: 50px;
+}
+
+.gallery_title {
+  color: white;
+  z-index: 200;
+  font-family: var(--font-rounded);
+  font-size: 74px;
+  position: absolute;
+  left: -5%;
+  transform: rotate(270deg);
+  letter-spacing: 14px;
+}
+
+.gallery_bg {
+  background-image: url("https://images.everydayhealth.com/images/blueberries-101-1440x810.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 769px) {
+  .gallery_title {
+    font-size: 68px;
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%, -15%);
+    letter-spacing: 14px;
+  }
+
+  .gallery_wrap {
+    max-width: 700px !important;
+  }
+  .div_margin {
+    margin: 70px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .gallery_title {
+    font-size: 68px;
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    transform: translate(-50%, -15%);
+    letter-spacing: 14px;
+  }
+
+  .div_margin {
+    margin: 60px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .gallery_title {
+    color: white;
+    z-index: 200;
+    font-family: var(--font-rounded);
+    font-size: 64px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+    letter-spacing: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery_title {
+    color: white;
+    z-index: 200;
+    font-family: var(--font-rounded);
+    font-size: 58px;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+    letter-spacing: 14px;
+  }
+
+  .div_margin {
+    margin: 0px;
+  }
+}
