@@ -1,7 +1,7 @@
 import React from "react";
+import Footer from "./Footer";
 import "./landing.scss";
 import LandingInfo from "./LandingInfo";
-import Footer from "./Footer";
 
 import { motion } from "framer-motion";
 
@@ -17,7 +17,7 @@ const Landing = () => {
           alt=""
           src="https://images.everydayhealth.com/images/blueberries-101-1440x810.jpg"
         />
-        <h1 className="landing_text">Biomo</h1>
+        <h1 className="landing_text">Ibery</h1>
         <LandingInfo />
         <Footer />
       </div>
